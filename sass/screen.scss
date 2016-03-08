@@ -1,0 +1,36 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+@import  "compass/typography/links";
+@import  "compass/typography";
+@import "compass/typography/text";
+@import "compass/typography/vertical_rhythm";
+@import "utils/variables";
+
+
+/*index*/
+.warp{width:$container-width; margin: 0 auto;}
+/*.warp .logo-img{ float: left;}*/
+/*.nav-box { float: right; padding-top: 30px;  }
+.nav-box li{ float: left;  }
+.nav-box li a{ padding: 0px 30px; font-size: 14px; color: #4f4f4f;text-decoration: none;}*/
+.warp{
+  .logo-img{float: left;}
+}
+.nav-box {
+  float: right; padding-top: 30px;
+  & li{
+    float: left;
+  }
+  & li a{
+    padding: 0px 30px; font-size: 14px; color: #4f4f4f;text-decoration: none; border-right: 1px solid #dadada;
+  }
+}
+
