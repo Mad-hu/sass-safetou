@@ -1,0 +1,8 @@
+*.scssc
+.idea/vcs.xml
+.idea/.name
+.idea/misc.xml
+.idea/modules.xml
+.idea/sass-safetou.iml
+.idea/workspace.xml
+README.md
