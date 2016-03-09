@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -68,28 +69,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/*整体宽度*/
+/*banner下面背景*/
+/* $index-image-bg: url("../image/img-d1.png") no-repeat scroll 0% 0% transparent; */
+/*局部蓝色字*/
+/*址*/
+/* $redbg：url("..image/pro-bg-m1.png") no-repeat scroll 0% 0% transparent; */
+/*产品背景*/
 /*index*/
-/* line 15, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 .warp {
   width: 1000px;
   margin: 0 auto;
 }
-
-/* line 17, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
 .warp .logo-img {
   float: left;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .nav-box {
   float: right;
   padding-top: 30px;
 }
-/* line 21, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .nav-box li {
   float: left;
 }
-/* line 24, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 .nav-box li a {
   padding: 0px 30px;
   font-size: 14px;
@@ -98,10 +105,76 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-right: 1px solid #dadada;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .banner-img {
   width: 100%;
-  background: url("image/banner-img.jpg") no-repeat scroll center center transparent;
+  background: url("../image/banner-img.jpg") no-repeat scroll center center transparent;
   display: inline-block;
   height: 420px;
+}
+
+/*banner下面*/
+/* line 39, ../sass/screen.scss */
+.img-dt {
+  width: 1000px;
+  margin: 0px auto;
+  height: 205px;
+  padding-bottom: 15px;
+}
+
+/* line 47, ../sass/screen.scss */
+.img-dt-item {
+  padding-top: 40px;
+}
+/* line 49, ../sass/screen.scss */
+.img-dt-item li {
+  float: left;
+  margin-right: 21px;
+  position: relative;
+  height: 116px;
+  width: 209px;
+}
+/* line 55, ../sass/screen.scss */
+.img-dt-item.img_dh1 {
+  background: "../image/img-d4";
+  display: inline-block;
+  width: 77px;
+  height: 78px;
+  margin-top: 16px;
+}
+
+/* line 63, ../sass/screen.scss */
+.img-text-title {
+  display: inline-block;
+  padding-right: 9px;
+  color: #0070CD;
+  font-size: 16px;
+  margin-left: -23px;
+  position: absolute;
+  top: 74px;
+}
+
+/* line 71, ../sass/screen.scss */
+.img-text-item {
+  padding-left: 54px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 5px;
+  position: absolute;
+  top: 94px;
+}
+
+/* line 80, ../sass/screen.scss */
+.pro1-con-item {
+  width: 1000px;
+  margin: 0 auto;
+  postion: relative;
+}
+
+/* line 84, ../sass/screen.scss */
+.pro1-img-bg {
+  display: inline-block;
+  width: 100%;
+  background: "../image/pro-bg-m1.png";
+  height: 580px;
 }
