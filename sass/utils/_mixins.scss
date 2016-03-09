@@ -1,5 +1,12 @@
 @mixin warpwidth{
 	width:$container-width;
 	margin:0 auto;
-
 }
+
+/*产品背景*/
+ @mixin bg-img-inedx{
+    display: inline-block;
+    width: 100%;
+   
+}
+ 
