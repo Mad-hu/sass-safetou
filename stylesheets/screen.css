@@ -134,7 +134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 116px;
   width: 209px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .img-dt-item.img_dh1 {
   background: "../image/img-d4";
   display: inline-block;
@@ -143,7 +143,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 16px;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .img-text-title {
   display: inline-block;
   padding-right: 9px;
@@ -154,7 +154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 74px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .img-text-item {
   padding-left: 54px;
   font-size: 14px;
@@ -164,14 +164,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   top: 94px;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .pro1-con-item {
   width: 1000px;
   margin: 0 auto;
   postion: relative;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .pro1-img-bg {
   display: inline-block;
   width: 100%;
