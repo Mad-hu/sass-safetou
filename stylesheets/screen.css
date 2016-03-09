@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* @import "compass/utilities"; */
 /* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,35 +69,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*index*/
-/* line 19, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 .warp {
   width: 1000px;
   margin: 0 auto;
 }
 
-/*.warp .logo-img{ float: left;}*/
-/*.nav-box { float: right; padding-top: 30px;  }
-.nav-box li{ float: left;  }
-.nav-box li a{ padding: 0px 30px; font-size: 14px; color: #4f4f4f;text-decoration: none;}*/
-/* line 25, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 .warp .logo-img {
   float: left;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .nav-box {
   float: right;
   padding-top: 30px;
 }
-/* line 29, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 .nav-box li {
   float: left;
 }
-/* line 32, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .nav-box li a {
   padding: 0px 30px;
   font-size: 14px;
   color: #4f4f4f;
   text-decoration: none;
   border-right: 1px solid #dadada;
+}
+
+/* line 28, ../sass/screen.scss */
+.banner-img {
+  width: 100%;
+  background: url("image/banner-img.jpg") no-repeat scroll center center transparent;
+  display: inline-block;
+  height: 420px;
 }
