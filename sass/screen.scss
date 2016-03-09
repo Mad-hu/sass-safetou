@@ -15,9 +15,13 @@
 
 /*index*/
 
-.warp{@include warpwidth
-&.logo-img{float: left;}
+.warp{
+	@include warpwidth;
+    & .logo-img{
+    	float: left;
+    }
 }
+
 .nav-box {
   float: right; padding-top: 30px;
   & li{
@@ -27,4 +31,58 @@
     padding: 0px 30px; font-size: 14px; color: #4f4f4f;text-decoration: none; border-right: 1px solid #dadada;
   }
 }
-.banner-img{ width:100%; background:url("image/78991446691519526.jpg") no-repeat scroll center center transparent; display: inline-block;height: 420px; }
+.banner-img{ width:100%; background:url("../image/banner-img.jpg") no-repeat scroll center center transparent; display: inline-block;height: 420px; }
+
+
+/*banner下面*/
+
+.img-dt {
+    width: $container-width;
+    margin: 0px auto;
+    height: 205px;
+    padding-bottom: 15px;
+}
+
+
+.img-dt-item {
+   padding-top: 40px;
+  & li{ float:left;
+  	    margin-right: 21px;
+        position: relative;
+        height: 116px;
+        width: 209px;
+       }
+  &.img_dh1 {
+       background: $drimg+"img-d4";
+      display: inline-block;
+      width: 77px;
+      height: 78px;
+      margin-top: 16px;
+   }
+}
+.img-text-title{     display: inline-block;
+    padding-right: 9px;
+    color: $color-blue;
+    font-size: 16px;
+    margin-left: -23px;
+    position: absolute;
+    top: 74px;}
+
+.img-text-item {
+    padding-left: 54px;
+    font-size: 14px;
+    color: #808080;
+    margin-top: 5px;
+    position: absolute;
+    top: 94px;
+}
+
+.pro1-con-item{
+	@include warpwidth;
+	postion:relative;
+}
+.pro1-img-bg{
+     @include bg-img-inedx;
+	background: $drimg +"pro-bg-m1.png";
+	height:580px;
+}
