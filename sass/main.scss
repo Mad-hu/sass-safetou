@@ -1,1 +1,46 @@
+
+
+
+
+/*----------------  base start ----------------*/
 @import "base/reset";
+@import "base/typography";
+/*----------------  base end ------------------*/
+
+/*----------------  components start ----------------*/
+@import "components/buttons";
+@import "components/carousel";
+@import "components/cover";
+/*----------------  components end ------------------*/
+
+/*----------------  layout start ----------------*/
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+/*----------------  layout end ------------------*/
+
+/*----------------  pages start ----------------*/
+@import "pages/contact";
+@import  "pages/usercenter";
+@import "pages/home";
+/*----------------  pages end ------------------*/
+
+/*----------------  themes start ----------------*/
+@import "themes/admin";
+@import "themes/theme";
+/*----------------  themes end ------------------*/
+
+/*----------------  utils start ----------------*/
+@import "utils/functions";
+@import "utils/helpers";
+@import "utils/mixins";
+@import "utils/variables";
+/*----------------  utils end ------------------*/
+
+/*----------------  vendors start ----------------*/
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";
+/*----------------  vendors end ------------------*/
