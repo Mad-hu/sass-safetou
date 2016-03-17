@@ -3,12 +3,12 @@
  *@time:2016-03-10 10:26:51
  *@disc:normalize replace with reset,add browse support modular,css3 modular
  */
-@import "normalize";
 @import "compass";
+@import "normalize";
+
 
 $supported-browsers:chrome,firefox,ie,safari,opera;
-$browser-minimum-versions:("chrome": null, "firefox": null, "ie": 8, "safari": null, "opera": null);
-
+$browser-minimum-versions:("ie":"8");
 a{
   @include unstyled-link();
 }
