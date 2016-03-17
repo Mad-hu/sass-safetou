@@ -12,37 +12,28 @@
 @import "utils/variables";
 @import "utils/mixins";
 
+@import "base/reset";
+@import "icons/icons";
+@import "compass/typography/lists/horizontal-list";
+@import "layout/navigation";
+
+@import "layout/product";
+@import "pro-img/_pro-image";
+
+
+
+
+
 /*index*/
-
-.warp{
-	@include warpwidth;
-    & .logo-img{
-    	float: left;
-    }
-}
-
-.nav-box {
-  float: right; padding-top: 30px;
-  & li{
-    float: left;
-  }
-  & li a{
-    padding: 0px 30px; font-size: 14px; color: #4f4f4f;text-decoration: none; border-right: 1px solid #dadada;
-  }
-}
-.banner-img{ width:100%; background:url("../image/banner-img.jpg") no-repeat scroll center center transparent; display: inline-block;height: 420px; }
 
 
 /*banner下面*/
-
 .img-dt {
     width: $container-width;
     margin: 0px auto;
     height: 205px;
     padding-bottom: 15px;
 }
-
-
 .img-dt-item {
    padding-top: 40px;
   & li{ float:left;
@@ -77,12 +68,63 @@
     top: 94px;
 }
 
-.pro1-con-item{
-	@include warpwidth;
-	postion:relative;
+/*qq*/
+.left-bar .tel{
+  color: $color;
 }
-.pro1-img-bg{
-     @include bg-img-inedx;
-	background: $drimg +"pro-bg-m1.png";
-	height:580px;
+.left-bar{
+  float: left;  line-height: 30px;
 }
+.qq {
+  width: 15px;
+  height: 15px;
+  margin-left:10px;
+  float: right;
+  padding-top: 9px;
+}
+.top_com {
+  display: block;
+  width: 15px;
+  height: 15px;
+  float: right;
+}
+.top03{
+  @include  bar-sprite("qq");
+}
+.top02{
+  @include  bar-sprite("weibo");
+}
+.top01{
+  @include  bar-sprite("weixin");
+}
+.top-bar{
+  width:$container-width;
+  margin: 0 auto;
+}
+.warp-bar{ background: #f3f3f3;
+             height: 30px; }
+
+.clearfix {
+ @include pie-clearfix();
+}
+.right-bar{
+  float: right;
+}
+
+.right-bar-login {
+  @include  inline-block-list();
+  float: right;
+  line-height: 30px;
+  & li a{
+    font-size: $font-size;
+    font-family: $ft-md;
+    text-align: center;
+    color: $color;
+    padding: 0px 10px;
+  }
+ }
+
+
+
+
+

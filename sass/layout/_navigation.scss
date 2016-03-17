@@ -1,0 +1,21 @@
+@import "utils/variables";
+
+.warp{
+  width:$container-width;
+  margin: 0 auto;
+  & .logo-img{
+    float: left;
+  }
+}
+
+.nav-box {
+  float: right; padding-top: 30px;
+  & li{
+    float: left;
+  }
+  & li a{
+    padding: 0px 30px; font-size: 14px; color: #4f4f4f;text-decoration: none; border-right: 1px solid #dadada;
+  }
+}
+.banner-img{ width:100%; background:url("../image/index/banner-img.jpg") no-repeat scroll center center transparent; display: inline-block;height: 420px; }
+
