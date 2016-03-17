@@ -31,9 +31,9 @@ aside{
     }
   }
   li{
-    background-color: #eeeeee;
+    //background-color: #eeeeee;
   }
-  @include pretty-bullets("c-aside.png",12px,18px);
+  @include pretty-bullets("index/c-aside.png",12px,18px);
   @include stretch(150px,50px,150px,50px);
   //@mixin pretty-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
   a{
