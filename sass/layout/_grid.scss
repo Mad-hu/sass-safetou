@@ -20,13 +20,11 @@ aside{
   ul{
     padding: 0px;
     background-color: #e5e5e5;
-    @include box-shadow(red 2px 2px 10px);
   }
 
   li:hover{
     height: 48px;
     background-color: #fdb323;
-    @include box-shadow(red 2px 2px 10px);
     color: #fff;
     a{
       color:#fff;
