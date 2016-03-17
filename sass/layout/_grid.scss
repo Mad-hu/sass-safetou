@@ -8,6 +8,7 @@
 .center-main{
   margin: 0 auto;
   background-color: #f6f6f6;
+  min-width: 1000px;
 }
 
 /**
@@ -16,10 +17,40 @@
  *@disc:
  */
 aside{
+  ul{
+    padding: 0px;
+    background-color: #e5e5e5;
+    @include box-shadow(red 2px 2px 10px);
+  }
+
+  li:hover{
+    height: 48px;
+    background-color: #fdb323;
+    @include box-shadow(red 2px 2px 10px);
+    color: #fff;
+    a{
+      color:#fff;
+    }
+  }
+  li{
+    background-color: #eeeeee;
+  }
+  @include pretty-bullets("c-aside.png",12px,18px);
   @include stretch(150px,50px,150px,50px);
   //@mixin pretty-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
-  @include pretty-bullets("c-aside.png",0px,-51px);
+  a{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    color: #6f6f6f;
+  }
+  a:after{
+    content: ">";
+    display: block;
+    float: right;
+    padding-right: 14px;
+  }
   line-height: 48px;
-  min-width: 1000px;
-  background-color: #fdb323;
+  width: 180px;
+
 }
