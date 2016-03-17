@@ -1,12 +1,7 @@
 *.scssc
+
 node_modules/*
 stylesheets/*
-.idea/vcs.xml
-.idea/.name
-.idea/misc.xml
-.idea/modules.xml
-.idea/sass-safetou.iml
-.idea/workspace.xml
+.idea/*
+
 README.md
-.idea/watcherTasks.xml
-.idea/libraries/compass_library.xml
