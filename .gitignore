@@ -1,4 +1,6 @@
 *.scssc
+node_modules/*
+stylesheets/*
 .idea/vcs.xml
 .idea/.name
 .idea/misc.xml
