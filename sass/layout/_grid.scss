@@ -20,22 +20,20 @@ aside{
   ul{
     padding: 0px;
     background-color: #e5e5e5;
-    @include box-shadow(red 2px 2px 10px);
   }
 
   li:hover{
     height: 48px;
     background-color: #fdb323;
-    @include box-shadow(red 2px 2px 10px);
     color: #fff;
     a{
       color:#fff;
     }
   }
   li{
-    background-color: #eeeeee;
+    //background-color: #eeeeee;
   }
-  @include pretty-bullets("c-aside.png",12px,18px);
+  @include pretty-bullets("index/c-aside.png",12px,18px);
   @include stretch(150px,50px,150px,50px);
   //@mixin pretty-bullets($bullet-icon, $width: image-width($bullet-icon), $height: image-height($bullet-icon), $line-height: 18px, $padding: 14px) {
   a{

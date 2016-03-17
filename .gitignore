@@ -1,7 +1,8 @@
-*.scssc
 
+.sass-cache/*
 node_modules/*
 stylesheets/*
 .idea/*
-
+*.css
 README.md
+*.pngc
