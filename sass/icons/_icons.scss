@@ -1,0 +1,18 @@
+@import "compass/utilities/sprites";
+
+@import "../image/bar/*.png";
+
+$bar-sprite-dimensions:true;
+
+/*$bar-spacing:12px;*/
+
+@include  all-bar-sprites();
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,5 @@
+@import "compass/typography/lists";
+
 /*整体宽度*/
 $container-width:1000px;
 
@@ -6,8 +8,26 @@ $container-width:1000px;
 
 /*局部蓝色字*/
 $color-blue:#0070CD;
+$color-orange:#ffa200;
+$color-green:#0bce78;
 
 /*址*/
 /* $redbg：url("..image/pro-bg-m1.png") no-repeat scroll 0% 0% transparent; */
-$drimg:"../image/"
+$drimg:"../image/";
+
+/*字体*/
+$ft-md:Microsoft YaHei;
+$font-size:14px;
+$color:#a0a0a0;
+
+/*产品*/
+$pro-width:310px;
+$background:#fff;
+$main-color:#6f6f6f;
+
+
+
+
+
+
 

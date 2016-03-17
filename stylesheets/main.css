@@ -320,8 +320,52 @@ aside {
 /* line 29, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
 aside li {
   padding-left: 14px;
-  background: url('../image/c-aside.png?1457923027') no-repeat 7px 34.5px;
+  background: url('../image/c-aside.png') no-repeat 7px 34.5px;
   list-style-type: none;
+}
+
+/*整体宽度*/
+/*banner下面背景*/
+/* $index-image-bg: url("../image/img-d1.png") no-repeat scroll 0% 0% transparent; */
+/*局部蓝色字*/
+/*址*/
+/* $redbg：url("..image/pro-bg-m1.png") no-repeat scroll 0% 0% transparent; */
+/*字体*/
+/*产品*/
+/* line 3, ../sass/layout/_navigation.scss */
+.warp {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* line 6, ../sass/layout/_navigation.scss */
+.warp .logo-img {
+  float: left;
+}
+
+/* line 11, ../sass/layout/_navigation.scss */
+.nav-box {
+  float: right;
+  padding-top: 30px;
+}
+/* line 13, ../sass/layout/_navigation.scss */
+.nav-box li {
+  float: left;
+}
+/* line 16, ../sass/layout/_navigation.scss */
+.nav-box li a {
+  padding: 0px 30px;
+  font-size: 14px;
+  color: #4f4f4f;
+  text-decoration: none;
+  border-right: 1px solid #dadada;
+}
+
+/* line 20, ../sass/layout/_navigation.scss */
+.banner-img {
+  width: 100%;
+  background: url("../image/index/banner-img.jpg") no-repeat scroll center center transparent;
+  display: inline-block;
+  height: 420px;
 }
 
 /*----------------  layout end ------------------*/
@@ -330,13 +374,35 @@ aside li {
 /*----------------  themes start ----------------*/
 /*----------------  themes end ------------------*/
 /*----------------  utils start ----------------*/
-/*产品背景*/
-/*整体宽度*/
-/*banner下面背景*/
-/* $index-image-bg: url("../image/img-d1.png") no-repeat scroll 0% 0% transparent; */
-/*局部蓝色字*/
-/*址*/
-/* $redbg：url("..image/pro-bg-m1.png") no-repeat scroll 0% 0% transparent; */
+/*index*/
+/* line 2, ../sass/utils/_mixins.scss */
+.more-orange, .more-blue, .more-green {
+  position: relative;
+  float: right;
+  top: 20px;
+  left: 198px;
+  font-size: 14px;
+}
+
+/* line 13, ../sass/utils/_mixins.scss */
+.more-orange {
+  color: orange;
+}
+
+/* line 14, ../sass/utils/_mixins.scss */
+.more-blue {
+  color: #006fcc;
+}
+
+/* line 15, ../sass/utils/_mixins.scss */
+.more-green {
+  color: #0bce78;
+}
+
+/*product*/
+/*money*/
+/*btn-font*/
+/*yield*/
 /*----------------  utils end ------------------*/
 /*----------------  vendors start ----------------*/
 /*----------------  vendors end ------------------*/

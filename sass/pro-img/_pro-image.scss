@@ -1,0 +1,33 @@
+@import "compass/utilities/sprites";
+@import "../image/product/*.png";
+$product: sprite-map("../image/product/*.png" );
+/*.sprite-base { background: $product no-repeat; }*/
+$product-clean-up: true;
+
+/*pro-title*/
+@import "../image/index-pro-title/*.png";
+$index-pro-title-layout:smart;
+$index-pro-title: sprite-map("../image/index-pro-title/*.png" );
+.sprite-base { background: $index-pro-title no-repeat; }
+$index-pro-title-sprite-dimensions:true;
+
+
+/* line*/
+@import "../image/line/*.png";
+$line:sprite-map("../image/line/*.png" );
+/*.sprite-base{ background:$line no-repeat;}*/
+ $line-layout:smart;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

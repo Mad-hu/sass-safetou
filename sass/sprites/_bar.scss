@@ -1,0 +1,105 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$bar-sprite-dimensions : false !default;
+$bar-use-percentages   : false !default;
+$bar-position          : 0% !default;
+$bar-spacing           : 0 !default;
+$bar-repeat            : no-repeat !default;
+$bar-prefix            : '' !default;
+$bar-clean-up          : true !default;
+$bar-layout            : vertical !default;
+$bar-inline            : false !default;
+$bar-sort-by           : 'none' !default;
+$bar-class-separator   : $default-sprite-separator !default;
+$bar-sprite-base-class : ".bar#{$bar-class-separator}sprite" !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $bar-qq-position: $bar-position !default;
+   $bar-qq-spacing:  $bar-spacing !default;
+   $bar-qq-repeat:   $bar-repeat !default;
+ 
+   $bar-weibo-position: $bar-position !default;
+   $bar-weibo-spacing:  $bar-spacing !default;
+   $bar-weibo-repeat:   $bar-repeat !default;
+ 
+   $bar-weixin-position: $bar-position !default;
+   $bar-weixin-spacing:  $bar-spacing !default;
+   $bar-weixin-repeat:   $bar-repeat !default;
+ 
+
+ $bar-sprites: sprite-map("../image/bar/*.png",
+ 
+   $bar-qq-position: $bar-qq-position, 
+   $bar-qq-spacing:  $bar-qq-spacing, 
+   $bar-qq-repeat:   $bar-qq-repeat,
+ 
+   $bar-weibo-position: $bar-weibo-position, 
+   $bar-weibo-spacing:  $bar-weibo-spacing, 
+   $bar-weibo-repeat:   $bar-weibo-repeat,
+ 
+   $bar-weixin-position: $bar-weixin-position, 
+   $bar-weixin-spacing:  $bar-weixin-spacing, 
+   $bar-weixin-repeat:   $bar-weixin-repeat,
+ 
+ $layout   : $bar-layout,
+ $cleanup  : $bar-clean-up,
+ $spacing  : $bar-spacing,
+ $position : $bar-position,
+ $sort-by  : $bar-sort-by
+ );
+
+
+// All sprites should extend this class
+// The bar-sprite mixin will do so for you.
+@if $bar-inline {
+  #{$bar-sprite-base-class} {
+    background-image: inline-sprite($bar-sprites);
+  } 
+} @else {
+  #{$bar-sprite-base-class} {
+    background-image: sprite-url($bar-sprites);
+    background-repeat: no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function bar-sprite-width($name) {
+    @return sprite-width($bar-sprites, $name);
+  }
+
+  @function bar-sprite-height($name) {
+    @return sprite-height($bar-sprites, $name);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin bar-sprite-dimensions($name) {
+  @include sprite-dimensions($bar-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin bar-sprite-position($name, $offset-x: 0, $offset-y: 0, $use-percentages: $bar-use-percentages) {
+  @include sprite-background-position($bar-sprites, $name, $offset-x, $offset-y, $use-percentages)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin bar-sprite($name, $dimensions: $bar-sprite-dimensions, $offset-x: 0, $offset-y: 0, $use-percentages: $bar-use-percentages, $separator: $bar-class-separator) {
+  @extend #{$bar-sprite-base-class};
+  @include sprite($bar-sprites, $name, $dimensions, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}
+
+@mixin bar-sprites($sprite-names, $dimensions: $bar-sprite-dimensions, $prefix: sprite-map-name($bar-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $bar-use-percentages, $separator: $bar-class-separator) {
+  @include sprites($bar-sprites, $sprite-names, $bar-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator)
+}
+
+// Generates a class for each sprited image.
+@mixin all-bar-sprites($dimensions: $bar-sprite-dimensions, $prefix: sprite-map-name($bar-sprites), $offset-x: 0, $offset-y: 0, $use-percentages: $bar-use-percentages, $separator: $bar-class-separator) {
+  @include bar-sprites(qq weibo weixin, $dimensions, $prefix, $offset-x, $offset-y, $use-percentages, $separator: $separator);
+}
